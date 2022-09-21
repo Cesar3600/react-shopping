@@ -43,5 +43,9 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: '[name].css'
 		})
-	]
+	],
+	devServer: {
+		contentBase: path.join(__dirname, 'dist'),
+		port: 3005
+	}
 }
